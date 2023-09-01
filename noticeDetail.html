@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    </head>
+    <style>
+        .bubble {
+	position: relative;
+	background: #c9c9c9;
+	border-radius: .4em;
+    width: 700px;
+    height: 100px;
+}
+
+    .bubble:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 25px solid transparent;
+        border-bottom-color: #c9c9c9;
+        border-top: 0;
+        margin-left: -25px;
+        margin-top: -25px;
+    }
+
+    </style>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <header>
+
+            <div class="navbar navbar-dark bg-dark shadow-sm" style="height: 75px;">
+              <div class="container">
+                <a href="webProject.html" class="navbar-brand d-flex align-items-center">
+                  <strong style="color: cornflowerblue;">TEAMPLE 모여</strong>
+                </a>
+                <a href="about.html">
+                  <stong style="color: white;">ABOUT</stong>
+                </a>
+                <a href="detailProject.html">
+                  <stong style="color: white;">프로젝트</stong>
+                </a>
+                <a href="mypage2.html">
+                  <stong style="color: white;">마이페이지</stong>
+                </a>
+                <a href="login.html">
+                <button type="button" class="btn btn-primary">LOGIN</button>
+                </a>
+                <a>
+                  <stong style="color: white; font-size: 40px;">☰</stong>
+                </a>
+              </div>
+            </div>
+          </header>
+
+          <main>
+            <br>
+            <div style="text-align: center; font-size: 30px;"><strong>게시판</strong></div>
+            <br><br>
+
+            <div class="col-lg-5" style="margin-left: 25%;">
+                <svg class="bd-placeholder-img rounded-circle" style="margin-left: 15%;" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                <h2 style="display: inline; margin-left: 10%;" class="fw-normal">닉네임</h2>
+                <br><br>
+                <div class="bubble" style="display: block; text-align: center; padding-top: 20px;">프론트엔드에 관심이 있는 23살대학생입니다.</div>
+                <br><br>
+                
+                <div>
+                  <h3 style="text-align: center;">관심분야</h3>
+                  <hr>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked="checked" onclick="return false">
+                      <label class="form-check-label" for="inlineCheckbox1" >웹</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" checked="checked" onclick="return false">
+                      <label class="form-check-label" for="inlineCheckbox2">안드로이드</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                      <label class="form-check-label" for="inlineCheckbox3">게임</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" checked="checked" onclick="return false" >
+                      <label class="form-check-label" for="inlineCheckbox3">경영</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                      <label class="form-check-label" for="inlineCheckbox3">법학</label>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div>
+                  <h3 style="text-align: center;">지역</h3>
+                  <hr>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked="checked" onclick="return false">
+                      <label class="form-check-label" for="inlineCheckbox1" >수도권</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" checked="checked" onclick="return false">
+                      <label class="form-check-label" for="inlineCheckbox2">서울</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                      <label class="form-check-label" for="inlineCheckbox3">부산</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled >
+                      <label class="form-check-label" for="inlineCheckbox3">대구</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                      <label class="form-check-label" for="inlineCheckbox3">충청도</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                      <label class="form-check-label" for="inlineCheckbox3">전라도</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                      <label class="form-check-label" for="inlineCheckbox3">경상도</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                      <label class="form-check-label" for="inlineCheckbox3">제주도</label>
+                    </div>
+                </div>
+                <br>
+                
+
+            </main>
+    </body>
+</html>
